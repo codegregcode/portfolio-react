@@ -11,6 +11,14 @@ const Footer = ({ currentLocation }) => {
     if (currentLocation === '/portfolio') {
       return <Link to="/about-me">About Me</Link>;
     }
+    if (currentLocation === '/music' || currentLocation === '/photo-reel') {
+      return (
+        <>
+          <Link to="/portfolio">Portfolio</Link>{' '}
+          <Link to="/about-me">About Me</Link>
+        </>
+      );
+    }
     return null;
   };
 
