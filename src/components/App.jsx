@@ -6,6 +6,8 @@ import MainMenu from './MainMenu';
 import AboutMe from './AboutMe';
 import Portfolio from './Portfolio';
 import Footer from './Footer';
+import PhotoReel from './PhotoReel';
+import Music from './Music';
 
 import '../styles/app.css';
 
@@ -17,8 +19,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Land />} />
         <Route path="/menu" element={<MainMenu />} />
-        <Route path="about-me" element={<AboutMe />} />
-        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/photo-reel" element={<PhotoReel />} />
+        <Route path="/music" element={<Music />} />
       </Routes>
       <Footer currentLocation={location.pathname} />
     </div>
