@@ -8,13 +8,25 @@ const Footer = () => {
     <div className="footer-container">
       <p>Conditional Link</p>
       <p>
-        <a href="https://github.com">GitHub</a>
+        <a
+          href="https://github.com/codegregcode"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
       </p>
       <p>
-        <a href="https://linkedin.com">LinkedIn</a>
+        <a
+          href="https://www.linkedin.com/in/greg-cain/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
       </p>
       <p>
-        <a href="mailto:your-email@example.com">E-Mail Me</a>
+        <a href="mailto:codegregcode@gmail.com">E-Mail Me</a>
       </p>
     </div>
   );
