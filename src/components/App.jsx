@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 import Land from './Land';
 import MainMenu from './MainMenu';
@@ -10,6 +10,8 @@ import Footer from './Footer';
 import '../styles/app.css';
 
 const App = () => {
+  const location = useLocation();
+
   return (
     <div className="App">
       <Routes>
@@ -18,7 +20,7 @@ const App = () => {
         <Route path="about-me" element={<AboutMe />} />
         <Route path="portfolio" element={<Portfolio />} />
       </Routes>
-      <Footer />
+      <Footer currentLocation={location.pathname} />
     </div>
   );
 };

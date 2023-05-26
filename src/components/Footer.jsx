@@ -1,12 +1,22 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-// will use above for link to AboutMe or Portfolio
+import { Link } from 'react-router-dom';
+
 import '../styles/footer.css';
 
-const Footer = () => {
+const Footer = ({ currentLocation }) => {
+  const getConditionalLink = () => {
+    if (currentLocation === '/about-me') {
+      return <Link to="/portfolio">Portfolio</Link>;
+    }
+    if (currentLocation === '/portfolio') {
+      return <Link to="/about-me">About Me</Link>;
+    }
+    return null;
+  };
+
   return (
     <div className="footer-container">
-      <p>Conditional Link</p>
+      {getConditionalLink()}
       <p>
         <a
           href="https://github.com/codegregcode"
