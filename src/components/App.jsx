@@ -9,16 +9,18 @@ import Footer from './Footer';
 
 import '../styles/app.css';
 
-const App = () => (
-  <div className="App">
-    <Routes>
-      <Route path="/" element={<Land />} />
-      <Route path="/menu" element={<MainMenu />} />
-      <Route path="/about-me" element={<AboutMe />} />
-      <Route path="/portfolio" element={<Portfolio />} />
-    </Routes>
-    <Footer />
-  </div>
-);
+const App = () => {
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Land />} />
+        <Route path="/menu" element={<MainMenu />} />
+        <Route path="about-me" element={<AboutMe />} />
+        <Route path="portfolio" element={<Portfolio />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
