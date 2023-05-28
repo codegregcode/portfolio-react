@@ -29,6 +29,10 @@ const AboutMe = () => {
         Or perhaps see what I&apos;ve been up to by looking at my{' '}
         <Link to="/photo-reel">photo reel</Link>
       </p>
+      <p>
+        Please don&apos;t hesitate to get in contact over GitHub, LinkedIn or
+        E-Mail by using the links below!
+      </p>
     </div>
   );
 };
