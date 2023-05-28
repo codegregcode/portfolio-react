@@ -1,0 +1,45 @@
+.music-container {
+  margin: 20px;
+}
+
+.music-container h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.music-container p {
+  margin-bottom: 10px;
+}
+
+.music-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.music-card h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.music-card img {
+  max-width: 25%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.music-card p {
+  margin-bottom: 10px;
+}
+
+.music-card a {
+  color: blue;
+  text-decoration: none;
+}
+
+.music-card a:hover {
+  text-decoration: underline;
+}

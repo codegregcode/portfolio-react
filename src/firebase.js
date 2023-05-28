@@ -48,4 +48,15 @@ const getProjects = async () => {
   return projects;
 };
 
-export { getPhotos, getProjects };
+const getMusic = async () => {
+  const querySnapshot = await db.collection('music').get();
+
+  const musicArr = [];
+  querySnapshot.forEach((doc) => {
+    const music = doc.data();
+    musicArr.push(music);
+  });
+  return musicArr;
+};
+
+export { getPhotos, getProjects, getMusic };
