@@ -1,19 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import db from '../firebase';
+import { getProjects } from '../firebase';
 
 import '../styles/portfolio.css';
-
-const getProjects = async () => {
-  const querySnapshot = await db.collection('projects').get();
-
-  const projects = [];
-  querySnapshot.forEach((doc) => {
-    const project = doc.data();
-    projects.push(project);
-  });
-
-  return projects;
-};
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
@@ -28,10 +16,10 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div>
+    <div className="project-container">
       <h1>Portfolio</h1>
       {projects.map((project) => (
-        <div key={project.title} className="project-container">
+        <div key={project.title} className="project-card">
           <h3>{project.title}</h3>
           <p>{project.description}</p>
           <img src={project.image_link} alt={project.title} />

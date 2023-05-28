@@ -24,4 +24,28 @@ firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore();
 
-export default db;
+const getPhotos = async () => {
+  const querySnapshot = await db.collection('photos').get();
+
+  const photos = [];
+  querySnapshot.forEach((doc) => {
+    const photo = doc.data();
+    photos.push(photo);
+  });
+
+  return photos;
+};
+
+const getProjects = async () => {
+  const querySnapshot = await db.collection('projects').get();
+
+  const projects = [];
+  querySnapshot.forEach((doc) => {
+    const project = doc.data();
+    projects.push(project);
+  });
+
+  return projects;
+};
+
+export { getPhotos, getProjects };
