@@ -1,14 +1,32 @@
-* {
+.photoreel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 82vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.photo-card {
+.react-image-gallery {
+  flex: 1;
+}
+
+.react-image-gallery .image-gallery-slide {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.react-image-gallery .image-gallery-slide img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.react-image-gallery .image-gallery-thumbnails-wrapper {
+  display: none;
 }
 
 img {
-  width: 100%; /* Updated property */
+  width: 100%;
 }

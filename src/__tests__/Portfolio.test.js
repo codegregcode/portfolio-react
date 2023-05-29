@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, waitFor } from '@testing-library/react';
 import Portfolio from '../components/Portfolio';
+import { getProjects } from '../firebase';
 
 jest.mock('../firebase', () => ({
   collection: () => ({
