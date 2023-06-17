@@ -22,7 +22,7 @@ const Portfolio = () => {
   const settings = {
     dots: true,
     arrows: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
