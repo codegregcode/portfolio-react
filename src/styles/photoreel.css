@@ -1,14 +1,14 @@
-.photoreel-container {
+.react-image-gallery-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 82vh;
+  height: calc(100svh - 20svh);
   overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .react-image-gallery {
   flex: 1;
+  max-height: calc(100% - 20svh);
 }
 
 .react-image-gallery .image-gallery-slide {
@@ -18,7 +18,7 @@
 }
 
 .react-image-gallery .image-gallery-slide img {
-  max-height: 100%;
+  max-height: auto;
   max-width: 100%;
   object-fit: contain;
 }
@@ -27,6 +27,6 @@
   display: none;
 }
 
-img {
-  width: 100%;
+.image-gallery-svg {
+  background-color: transparent;
 }

@@ -1,38 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,300&family=Noto+Serif:ital@0;1&display=swap');
+
+* {
+  font-family: 'Noto Sans', sans-serif;
+  color: #bbc8d4;
+  background-color: #8494a4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #d8afa3;
+}
+
+a {
+  text-decoration: none;
+  color: #d8afa3;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 18svh;
+  background-color: #9f7f63;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer-container a {
+  background-color: #9f7f63; /* Set the background color of the links to match the footer container */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-container p {
+  background-color: #9f7f63;
 }

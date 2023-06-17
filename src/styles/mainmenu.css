@@ -1,0 +1,20 @@
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 18vh);
+}
+
+.menu-container a {
+  margin: 10px;
+  text-decoration: none;
+}
+
+.menu-container a:hover {
+  text-decoration: underline;
+}
+
+.menu-container h3 {
+  font-size: 18px;
+}
