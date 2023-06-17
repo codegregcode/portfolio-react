@@ -1,21 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/footer.css';
+import '../styles/app.css';
 
 const Footer = ({ currentLocation }) => {
   const getConditionalLink = () => {
     if (currentLocation === '/about-me') {
-      return <Link to="/portfolio">Portfolio</Link>;
-    }
-    if (currentLocation === '/portfolio') {
-      return <Link to="/about-me">About Me</Link>;
-    }
-    if (currentLocation === '/music' || currentLocation === '/photo-reel') {
       return (
         <>
           <Link to="/portfolio">Portfolio</Link>{' '}
-          <Link to="/about-me">About Me</Link>
+          <Link to="/photo-reel">Photo Reel</Link>{' '}
+          <Link to="/music">Music</Link>
+        </>
+      );
+    }
+    if (currentLocation === '/portfolio') {
+      return (
+        <>
+          <Link to="/about-me">About Me</Link>{' '}
+          <Link to="/photo-reel">Photo Reel</Link>{' '}
+          <Link to="/music">Music</Link>
+        </>
+      );
+    }
+    if (currentLocation === '/music') {
+      return (
+        <>
+          <Link to="/portfolio">Portfolio</Link>{' '}
+          <Link to="/about-me">About Me</Link>{' '}
+          <Link to="/photo-reel">Photo Reel</Link>{' '}
+        </>
+      );
+    }
+    if (currentLocation === '/photo-reel') {
+      return (
+        <>
+          <Link to="/portfolio">Portfolio</Link>{' '}
+          <Link to="/about-me">About Me</Link> <Link to="/music">Music</Link>{' '}
         </>
       );
     }
