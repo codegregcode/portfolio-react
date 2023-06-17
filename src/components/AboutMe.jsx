@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const AboutMe = () => {
   return (
     <div className="about-me-container">
-      <h1>A little about me...</h1>
+      <h1>About me</h1>
       <p data-testid="p1">
         My name is Greg and I&apos;m a junior developer & a musician.
       </p>
