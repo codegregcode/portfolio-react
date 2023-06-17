@@ -25,9 +25,10 @@ const PhotoReel = () => {
 
   return (
     <div className="photoreel-container">
-      <h3>Photo Reel</h3>
-      <p>See what I&apos;ve been up to!</p>
-      <ReactImageGallery items={images} />
+      <div className="react-image-gallery-container">
+        <h3>Photo Reel</h3>
+        <ReactImageGallery items={images} />
+      </div>
     </div>
   );
 };
